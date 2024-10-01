@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Anonyme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="username-container" id="username-container">
+            <input type="text" id="username-input" placeholder="Entrez votre pseudonyme" />
+            <button id="set-username-button">Valider</button>
+        </div>
+        <div class="users" id="users"></div>
+        <div class="messages" id="messages"></div>
+        <input type="text" id="message-input" placeholder="Tapez votre message ici..." disabled />
+        <button id="send-button" disabled>Envoyer</button>
+        <div class="typing-notification" id="typing-notification"></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
